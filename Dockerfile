@@ -1,5 +1,4 @@
-#FROM node:18-bullseye-slim
-FROM node:lts-alpine AS frontend
+FROM node:18-bullseye-slim
 
 RUN apt-get update && \
     apt-get install -y xvfb supervisor wget
